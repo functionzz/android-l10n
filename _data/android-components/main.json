@@ -105,21 +105,7 @@
     "mozac_browser_awesomebar_remove_suggestion",
     "mozac_browser_awesomebar_stock_suggestion_decrease",
     "mozac_browser_awesomebar_stock_suggestion_increase",
-    "mozac_browser_awesomebar_stock_suggestion_no_change",
-    "mozac_browser_awesomebar_sport_suggestion_live",
-    "mozac_browser_awesomebar_sport_suggestion_scheduled",
-    "mozac_browser_awesomebar_sport_suggestion_delayed",
-    "mozac_browser_awesomebar_sport_suggestion_postponed",
-    "mozac_browser_awesomebar_sport_suggestion_in_progress",
-    "mozac_browser_awesomebar_sport_suggestion_suspended",
-    "mozac_browser_awesomebar_sport_suggestion_canceled",
-    "mozac_browser_awesomebar_sport_suggestion_final",
-    "mozac_browser_awesomebar_sport_suggestion_final_over_time",
-    "mozac_browser_awesomebar_sport_suggestion_final_shoot_out",
-    "mozac_browser_awesomebar_sport_suggestion_forfeited",
-    "mozac_browser_awesomebar_sport_suggestion_date_today",
-    "mozac_browser_awesomebar_sport_suggestion_date_tomorrow",
-    "mozac_browser_awesomebar_sport_suggestion_talkback_team_description_no_score"
+    "mozac_browser_awesomebar_stock_suggestion_no_change"
   ],
   "/home/runner/work/android-l10n/android-l10n/l10n/mozilla-mobile/android-components/components/compose/base/src/main/res/values/strings.xml": [
     "text_field_eye_trailing_icon_default_content_description",
