@@ -36,8 +36,8 @@ jobs:
         working-directory: l10n
       - name: Get list of branches & path
         id: config
-        run: >
-          echo "branches=$(jq -c '.branches' < l10n/.github/update-config.json)" >> "$GITHUB_OUTPUT" \
+        run: |
+          echo "branches=$(jq -c '.branches' < l10n/.github/update-config.json)" >> "$GITHUB_OUTPUT"
           echo "path=$(jq -r --arg project "${{ inputs.project }}" '.paths[$project]' < l10n/.github/update-config.json)" >> "$GITHUB_OUTPUT"
 
   update:
@@ -75,7 +75,6 @@ jobs:
           --branch ${{ matrix.ref }} \
           --commit $(cd ../firefox && git rev-parse --short HEAD) \
           --source ../firefox
-        working-directory: l10n
       - name: git config
         run: >
           git config --global user.name "github-actions[bot]" \
