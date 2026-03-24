@@ -1,4 +1,5 @@
 *.pyc
 .*
 !.github
+!.gitignore
 __pycache__
