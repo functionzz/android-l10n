@@ -84,6 +84,7 @@ jobs:
         working-directory: l10n
       - run: git add .
         working-directory: l10n
+      - run: echo ${{ github.repository }}
       - name: git commit & push any changes
         run: >
           git diff-index --quiet HEAD || (git commit -F .update_msg && git push)
