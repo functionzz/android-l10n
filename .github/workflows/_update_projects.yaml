@@ -29,7 +29,7 @@ jobs:
           ref: main
           path: l10n
       - name: Set token
-        run: git remote set-url origin https://x-access-token:${{ secrets.ANDROID_GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         working-directory: l10n
       - name: Refresh l10n:${{ inputs.project }}_update
         run: git push origin HEAD:${{ inputs.project }}_update || true
@@ -80,7 +80,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: Set token
-        run: git remote set-url origin https://x-access-token:${{ secrets.ANDROID_GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
         working-directory: l10n
       - name: Debug remote
         run: git remote -v
@@ -118,7 +118,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: Set token
-        run: git remote set-url origin https://x-access-token:${{ secrets.ANDROID_GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         working-directory: l10n
       - run: git add .
         working-directory: l10n
@@ -127,4 +127,4 @@ jobs:
         working-directory: l10n
       - run: gh pr create --base main --head ${{ inputs.project }}_update --title "Update messages for ${{ inputs.project }}" --body "" || true
         env:
-          GH_TOKEN: ${{ secrets.ANDROID_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
