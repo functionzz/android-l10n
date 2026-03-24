@@ -1,8 +1,8 @@
 {
   "branches": [
-    "release",
+    "main",
     "beta",
-    "main"
+    "release"
   ],
   "head": "main",
   "paths": {
