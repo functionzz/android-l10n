@@ -82,9 +82,11 @@ jobs:
       - name: Set token
         run: git remote set-url origin https://x-access-token:${{ secrets.ANDROID_GITHUB_TOKEN }}@github.com/${{ github.repository }}
         working-directory: l10n
+      - name: Debug remote
+        run: git remote -v
+        working-directory: l10n
       - run: git add .
         working-directory: l10n
-      - run: echo ${{ github.repository }}
       - name: git commit & push any changes
         run: >
           git diff-index --quiet HEAD || (git commit -F .update_msg && git push)
