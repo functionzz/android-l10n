@@ -120,8 +120,6 @@
     "mozac_browser_toolbar_long_press_popup_copy",
     "mozac_browser_toolbar_long_press_popup_paste",
     "mozac_browser_toolbar_long_press_popup_paste_and_go",
-    "mozac_toolbar_cfr_title",
-    "mozac_toolbar_cfr_description",
     "mozac_minimal_display_toolbar_content_description"
   ],
   "/home/runner/work/android-l10n/android-l10n/l10n/mozilla-mobile/android-components/components/compose/cfr/src/main/res/values/strings.xml": [
@@ -442,6 +440,11 @@
   "/home/runner/work/android-l10n/android-l10n/l10n/mozilla-mobile/android-components/components/feature/fxsuggest/src/main/res/values/strings.xml": [
     "sponsored_suggestion_description"
   ],
+  "/home/runner/work/android-l10n/android-l10n/l10n/mozilla-mobile/android-components/components/feature/importer/src/main/res/values/strings.xml": [
+    "mozac_feature_importer_dialog_title",
+    "mozac_feature_importer_dialog_description",
+    "mozac_feature_importer_dialog_cancel"
+  ],
   "/home/runner/work/android-l10n/android-l10n/l10n/mozilla-mobile/android-components/components/feature/media/src/main/res/values/strings.xml": [
     "mozac_feature_media_notification_channel",
     "mozac_feature_media_sharing_camera",
@@ -643,7 +646,8 @@
     "mozac_feature_summarize_summary_model",
     "mozac_feature_summarize_disclaimer_message",
     "mozac_ai_controls_page_summary_title",
-    "mozac_ai_controls_page_summary_description"
+    "mozac_ai_controls_page_summary_description",
+    "mozac_summarize_error_dissmiss"
   ],
   "/home/runner/work/android-l10n/android-l10n/l10n/mozilla-mobile/android-components/components/feature/tabs/src/main/res/values/strings.xml": [
     "mozac_feature_tabs_toolbar_tabs_button"
